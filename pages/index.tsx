@@ -87,20 +87,24 @@ const Home: NextPage<IProps> = ({
 
 export default Home
 
-export const getServerSideProps: GetServerSideProps<IProps> = async () => {
-  const socials: Social[] = await fetchSocials()
-  const career: CareerType[] = await fetchCareer()
-  const skills: SkillType[] = await fetchSkills()
-  const projects: Project[] = await fetchProjects()
+export const getServerSideProps = async () => {
+  try {
+    const socials: Social[] = await fetchSocials()
+    const career: CareerType[] = await fetchCareer()
+    const skills: SkillType[] = await fetchSkills()
+    const projects: Project[] = await fetchProjects()
 
-  return {
-    props: {
-      socials,
-      career,
-      skills,
-      projects,
-    },
+    return {
+      props: {
+        socials,
+        career,
+        skills,
+        projects,
+      },
 
-    revalidate: 10,
+      revalidate: 10,
+    }
+  } catch (error) {
+    console.log(error)
   }
 }
