@@ -47,7 +47,7 @@ const ExperienceCard: NextPage<IProps> = ({ career }) => {
             : new Date(career.dateEnded).toDateString()}
         </p>
 
-        <ul className="list-disc list-inside space-y-4 ml-5 text-lg h-0 sm:max-h-80 overflow-y-auto scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a] pr-2 sm:pr-0">
+        <ul className="list-disc list-inside space-y-4 ml-5 text-lg h-0 sm:h-fit overflow-y-auto scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a] pr-2 sm:pr-0">
           {career?.points.map(point => (
             <li key={point}>{point}</li>
           ))}
