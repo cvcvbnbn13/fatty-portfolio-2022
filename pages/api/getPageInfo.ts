@@ -13,11 +13,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  try {
-    const pageInfo: PageInfo = await sanityClient.fetch(query)
+  const pageInfo: PageInfo = await sanityClient.fetch(query)
 
-    res.status(200).json({ pageInfo })
-  } catch (error) {
-    console.error(error)
-  }
+  res.status(200).json({ pageInfo })
 }

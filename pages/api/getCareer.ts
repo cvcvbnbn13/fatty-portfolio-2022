@@ -16,11 +16,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  try {
-    const career: CareerType[] = await sanityClient.fetch(query)
+  const career: CareerType[] = await sanityClient.fetch(query)
 
-    res.status(200).json({ career })
-  } catch (error) {
-    console.error(error)
-  }
+  res.status(200).json({ career })
 }

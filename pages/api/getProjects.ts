@@ -16,10 +16,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  try {
-    const projects: Project[] = await sanityClient.fetch(query)
-    res.status(200).json({ projects })
-  } catch (error) {
-    console.error(error)
-  }
+  const projects: Project[] = await sanityClient.fetch(query)
+  res.status(200).json({ projects })
 }
