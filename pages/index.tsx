@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import type { NextPage, GetStaticProps } from 'next'
+import type { NextPage, GetStaticProps, GetServerSideProps } from 'next'
 import Link from 'next/link'
 import {
   Header,
@@ -87,7 +87,7 @@ const Home: NextPage<IProps> = ({
 
 export default Home
 
-export const getStaticProps: GetStaticProps<IProps> = async () => {
+export const getServerSideProps: GetServerSideProps<IProps> = async () => {
   const socials: Social[] = await fetchSocials()
   const career: CareerType[] = await fetchCareer()
   const skills: SkillType[] = await fetchSkills()
