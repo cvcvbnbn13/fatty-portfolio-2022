@@ -84,7 +84,25 @@ A Funny Repo using **TypeScript & React(Next.js)** , css framework **Tailwindcss
 
 ├── utils
 
+│ ├── fetchCareer.ts
+
+│ ├── fetchPageInfo.ts
+
+│ ├── fetchProjects.ts
+
+│ ├── fetchSkills.ts
+
+│ ├── fetchSocials.ts
+
 ├── types.d.ts
+
+├── .env.local
+
+├── package.json
+
+├── tailwind.config.js
+
+├── tsconfig.json
 
 ├── next.config.js
 

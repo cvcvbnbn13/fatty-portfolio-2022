@@ -102,6 +102,5 @@ export const getServerSideProps: GetServerSideProps<IProps> = async () => {
     },
 
     revalidate: 10,
-    fallback: true,
   }
 }
