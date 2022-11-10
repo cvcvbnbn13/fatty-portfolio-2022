@@ -10,7 +10,7 @@ interface IProps {
   pageInfo: PageInfo
 }
 
-const Hero: NextPage<IProps> = ({ pageInfo }) => {
+const Hero: NextPage = () => {
   const [text, count] = useTypewriter({
     words: [`嗨，我是邵謙`, '一個轉職前端領域的自我學習者'],
     loop: true,

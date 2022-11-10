@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import { PageInfo } from '@type'
 
-interface IProps {
-  pageInfo: PageInfo
-}
+// interface IProps {
+//   pageInfo: PageInfo
+// }
 
-const About: NextPage<IProps> = ({ pageInfo }) => {
+const About: NextPage = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
