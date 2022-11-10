@@ -88,7 +88,6 @@ const Home: NextPage<IProps> = ({
 export default Home
 
 export const getStaticProps: GetStaticProps<IProps> = async () => {
-  // const pageInfo: PageInfo = await fetchPageInfo()
   const socials: Social[] = await fetchSocials()
   const career: CareerType[] = await fetchCareer()
   const skills: SkillType[] = await fetchSkills()
@@ -96,7 +95,6 @@ export const getStaticProps: GetStaticProps<IProps> = async () => {
 
   return {
     props: {
-      // pageInfo,
       socials,
       career,
       skills,
@@ -104,5 +102,6 @@ export const getStaticProps: GetStaticProps<IProps> = async () => {
     },
 
     revalidate: 10,
+    fallback: true,
   }
 }
