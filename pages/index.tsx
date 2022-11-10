@@ -21,7 +21,7 @@ import {
 } from '@utils'
 
 interface IProps {
-  pageInfo: PageInfo
+  // pageInfo: PageInfo
   career: CareerType[]
   skills: SkillType[]
   projects: Project[]
@@ -29,7 +29,7 @@ interface IProps {
 }
 
 const Home: NextPage<IProps> = ({
-  pageInfo,
+  // pageInfo,
   career,
   skills,
   projects,
@@ -47,11 +47,11 @@ const Home: NextPage<IProps> = ({
       <Header socials={socials} />
       {/* Hero */}
       <section id="hero" className="snap-start">
-        <Hero pageInfo={pageInfo} />
+        <Hero />
       </section>
       {/* About */}
       <section id="about" className="snap-center">
-        <About pageInfo={pageInfo} />
+        <About />
       </section>
       {/* Career */}
       <section id="career" className="snap-center">
@@ -88,7 +88,7 @@ const Home: NextPage<IProps> = ({
 export default Home
 
 export const getStaticProps: GetStaticProps<IProps> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo()
+  // const pageInfo: PageInfo = await fetchPageInfo()
   const socials: Social[] = await fetchSocials()
   const career: CareerType[] = await fetchCareer()
   const skills: SkillType[] = await fetchSkills()
@@ -96,7 +96,7 @@ export const getStaticProps: GetStaticProps<IProps> = async () => {
 
   return {
     props: {
-      pageInfo,
+      // pageInfo,
       socials,
       career,
       skills,
