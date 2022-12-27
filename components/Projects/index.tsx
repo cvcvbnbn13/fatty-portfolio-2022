@@ -46,6 +46,7 @@ const Projects: NextPage<IProps> = ({ projects }) => {
                 <a
                   href={project.linkToBuild}
                   className="hover:border-b border-[#f7ab0a]"
+                  aria-disabled={!project.linkToBuild}
                 >
                   <h4 className="text-2xl font-semibold text-[#f7ab0a]  text-center">
                     Demo
