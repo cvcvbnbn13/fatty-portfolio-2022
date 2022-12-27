@@ -43,15 +43,16 @@ const Projects: NextPage<IProps> = ({ projects }) => {
                 個人專案{index + 1}: {project.title}
               </h4>
               <div className="flex flex-row space-x-10 justify-center">
-                <a
-                  href={project.linkToBuild}
-                  className="hover:border-b border-[#f7ab0a]"
-                  aria-disabled={!project.linkToBuild}
-                >
-                  <h4 className="text-2xl font-semibold text-[#f7ab0a]  text-center">
-                    Demo
-                  </h4>
-                </a>
+                {project.linkToBuild && (
+                  <a
+                    href={project.linkToBuild}
+                    className="hover:border-b border-[#f7ab0a]"
+                  >
+                    <h4 className="text-2xl font-semibold text-[#f7ab0a]  text-center">
+                      Demo
+                    </h4>
+                  </a>
+                )}
                 <a
                   href={project.linkToGithub}
                   className="hover:border-b border-[#f7ab0a]"
