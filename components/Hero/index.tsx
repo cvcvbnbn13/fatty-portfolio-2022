@@ -21,7 +21,7 @@ const Hero: NextPage = () => {
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.18172-8/24883213_1984429734918203_258734237170618325_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=PhwPOD_fcsAAX8hvZ1y&_nc_ht=scontent-tpe1-1.xx&oh=00_AfA5i1UEdlmzbhl00nu0TpK12RIjJRpsXm79L4QoBZR6cg&oe=63918303"
+        src="https://www.facebook.com/photo/?fbid=1984429734918203&set=a.179497728744755"
         alt=""
       />
       <div className="z-20">
