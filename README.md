@@ -20,91 +20,91 @@ A Funny Repo using **TypeScript & React(Next.js)** , css framework **Tailwindcss
 
 ## 目錄結構說明
 
-├── components
+1. components
 
-│ ├── About
+   - About
 
-│ ├── BackgroundCircles
+   - BackgroundCircles
 
-│ ├── Career
+   - Career
 
-│ │ ├── ExperienceCard
+     - ExperienceCard
 
-│ ├── ContactMe
+   - ContactMe
 
-│ ├── Header
+   - Header
 
-│ ├── Hero
+   - Hero
 
-│ ├── Projects
+   - Projects
 
-│ ├── Skills
+   - Skills
 
-│ │ ├── Skill
+     - Skill
 
-│ ├── index.js
+   - index.js
 
-├── fatty-portfolio **_sanity 後端_**
+2. fatty-portfolio **_sanity 後端_**
 
-│ ├── schemas
+   - schemas
 
-│ │ ├── career.js
+     - career.js
 
-│ │ ├── pageInfo.js
+     - pageInfo.js
 
-│ │ ├── project.js
+     - project.js
 
-│ │ ├── skill.js
+     - skill.js
 
-│ │ ├── social.js
+     - social.js
 
-│ │ ├── scheam.js
+     - scheam.js
 
-├── pages
+3. pages
 
-│ ├── api
+   - api
 
-│ │ ├── getCareer.ts
+     - getCareer.ts
 
-│ │ ├── getPageInfo.ts
+     - getPageInfo.ts
 
-│ │ ├── getProjects.ts
+     - getProjects.ts
 
-│ │ ├── getSkills.ts
+     - getSkills.ts
 
-│ │ ├── getSocials.ts
+     - getSocials.ts
 
-│ ├── \_app.tsx
+   - \_app.tsx
 
-│ ├── index.tsx
+   - index.tsx
 
-├── public
+4. public
 
-├── styles
+5. styles
 
-├── utils
+6. utils
 
-│ ├── fetchCareer.ts
+   - fetchCareer.ts
 
-│ ├── fetchPageInfo.ts
+   - fetchPageInfo.ts
 
-│ ├── fetchProjects.ts
+   - fetchProjects.ts
 
-│ ├── fetchSkills.ts
+   - fetchSkills.ts
 
-│ ├── fetchSocials.ts
+   - fetchSocials.ts
 
-├── types.d.ts
+7. types.d.ts
 
-├── .env.local
+8. .env.local
 
-├── package.json
+9. package.json
 
-├── tailwind.config.js
+10. tailwind.config.js
 
-├── tsconfig.json
+11. tsconfig.json
 
-├── next.config.js
+12. next.config.js
 
 ---
 
