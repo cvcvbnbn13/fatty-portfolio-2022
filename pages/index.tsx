@@ -21,7 +21,7 @@ import {
 } from '@utils'
 
 interface IProps {
-  // pageInfo: PageInfo
+  // pageInfo: PageInfo[]
   career: CareerType[]
   skills: SkillType[]
   projects: Project[]
@@ -35,8 +35,6 @@ const Home: NextPage<IProps> = ({
   projects,
   socials,
 }) => {
-  console.log(2)
-
   return (
     <div className="bg-[#1c2f2f] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]">
       <Head>
@@ -88,6 +86,7 @@ const Home: NextPage<IProps> = ({
 export default Home
 
 export const getServerSideProps: GetServerSideProps<IProps> = async () => {
+  // const pageInfo: PageInfo[] = await fetchPageInfo()
   const socials: Social[] = await fetchSocials()
   const career: CareerType[] = await fetchCareer()
   const skills: SkillType[] = await fetchSkills()
@@ -95,6 +94,7 @@ export const getServerSideProps: GetServerSideProps<IProps> = async () => {
 
   return {
     props: {
+      // pageInfo,
       socials,
       career,
       skills,
